@@ -1,0 +1,24 @@
+import java.util.Scanner;  // Import the Scanner class
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner input = new Scanner(System.in);
+        double totalSpent = 0;
+        
+        //Ask for budget
+        System.out.println("How much money do you want to spend this month.");
+        
+        //Save the budget
+        double budget = input.nextDouble();
+        
+        //Ask for expenses
+        System.out.println("How much is your expense");
+        
+        //Save the expense
+        double expense = input.nextDouble();
+        
+        //Add expense to total
+        totalSpent = totalSpent + expense;
+    }
+}
